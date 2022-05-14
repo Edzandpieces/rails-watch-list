@@ -2,7 +2,7 @@
 <h1>Welcome to your movies list</h1>
 <ul>
   <% @lists.each do |list| %>
-    <li><%= list.name %></li>
-  <% end %>
+    <li><%= link_to list.name, list_path(list) %></li>
+    <% end %>
 </ul>
 </div>
